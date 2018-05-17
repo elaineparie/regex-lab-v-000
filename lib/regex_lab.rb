@@ -12,7 +12,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
- text.scan(/[A-Z]\w*\W\z/).any?
+ text.scan(/\A[A-Z]\w*\W\z/).any?
 end
 
 def valid_phone_number?(phone)
